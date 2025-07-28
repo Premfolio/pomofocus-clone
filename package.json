@@ -1,0 +1,34 @@
+{
+  "name": "pomofocus-clone",
+  "version": "1.0.0",
+  "description": "A Pomodoro timer web application built with React, Node.js, Express, and MongoDB",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "install-server": "npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "start": "node server/index.js"
+  },
+  "keywords": ["pomodoro", "timer", "productivity", "react", "nodejs", "express", "mongodb"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  }
+} 
